@@ -1,1 +1,1 @@
-ALX argument count and argument value
+solution to 0x0A. C - argc, argv tasks

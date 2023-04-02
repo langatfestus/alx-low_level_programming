@@ -1,23 +1,37 @@
-
-#include <stdio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
 /**
- * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
+ * main - print if the number is postive, zero, or negative
+ *
+ * Description: using the main function
+ * this program prints "Programming is positive, zero, or negative
  * Return: 0
  */
 int main(void)
 {
-	char c = 'z';
+int n;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-	while (c >= 'a')
-	{
-		putchar(c);
-		c--;
-	}
+/* your code goes there */
+if (n > 0)
+{
+	printf("%i is positive\n", n);
 
-	putchar('\n');
+}
+else if (n == 0)
+
+{
+	printf("%i is zero\n", n);
+}
+else if (n < 0)
+{
+	printf("%i is negative\n", n);
+
+}
+
 	return (0);
+
 }

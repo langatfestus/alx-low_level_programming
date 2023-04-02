@@ -1,6 +1,1 @@
-### C-Programming
-
------------------
-
-### MORE SINGLY LINKED LISTS
-
+0x13. C - More singly linked lists

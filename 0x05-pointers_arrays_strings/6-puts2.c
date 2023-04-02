@@ -1,23 +1,21 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * puts2 - prints a string, followed by a new line,
- * @str: pointer to the string to print
- * Return: void
-*/
+ * puts2 - prints every other character
+ * @str: string
+ * Return: nothing
+ */
 
 void puts2(char *str)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (*(str + i) != '\0')
 	{
 		if (i % 2 == 0)
-		{
-			_putchar(str[i]);
-		}
-
+			putchar(*(str + i));
 		i++;
 	}
-	_putchar('\n');
+	putchar(10);
 }
-
